@@ -1,0 +1,153 @@
+/* Base styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F1F1F1;
+    color: #2C2C2C;
+    margin: 20px;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background-color: #1B263B;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #168AAD;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #E63946;
+}
+
+/* Headings */
+h1, h2 {
+    font-family: Georgia, serif;
+    color: #1B263B;
+}
+
+h1 {
+    border-bottom: 2px solid #168AAD;
+    padding-bottom: 10px;
+}
+
+/* Content container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Images */
+.img-placeholder {
+    width: 300px;
+    height: 200px;
+    background-color: #ddd;
+    margin: 20px 0;
+    border: 2px solid #168AAD;
+    border-radius: 5px;
+}
+
+/* Unique layout for Lab Work page */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+/* Unique background for Biochemistry page */
+.biochem-page {
+    background-color: #E6F2FF;
+}
+
+/* Unique font style for AI Projects page */
+.ai-page h1, .ai-page h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #E63946;
+}
+
+/* Unique layout for Hobbies page */
+.hobbies-page {
+    background-image: url('images/hobbies-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+/* Unique border for Coding Projects */
+.coding-page .container {
+    border: 3px solid #1B263B;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #168AAD;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #E63946;
+}
+
+/* Misc */
+.highlight {
+    color: #E63946;
+    font-weight: bold;
+}
+
+/* Add subtle animation for page transitions */
+body {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
